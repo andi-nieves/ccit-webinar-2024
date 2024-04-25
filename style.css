@@ -1,0 +1,31 @@
+.header {
+    background-image: linear-gradient(rgba(112.520718, 44.062154, 249.437846, 1), rgba(112.520718, 44.062154, 249.437846, 0.95));
+    color: white;
+    padding: 20px;
+}
+
+.loader {
+    margin: auto;
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #25b09b;
+    --_m:
+        conic-gradient(#0000 10%, #000),
+        linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+}
+
+.animate {
+    animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
